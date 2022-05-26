@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página 01</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
     
@@ -19,21 +22,11 @@
         <div id="menubar">
 
             <ul id="menulist">
-                <a href="index.html">
-                    <li class="menuitem">Folha de estilo 1</li>
-                </a>
-                <a href="page002.html">
-                    <li class="menuitem">Folha de estilo 2</li>
-                </a>
-                <a href="page003.html">
-                    <li class="menuitem">Folha de estilo 3</li>
-                </a>
-                <a href="page004.html">
-                    <li class="menuitem">Folha de estilo 4</li>
-                </a>
-                <a href="stock.html">
-                    <li class="menuitem">Sem folha de estilo</li>
-                </a>
+                    <li class="menuitem" onclick="reStyle(0)">Folha de estilo 1</li>
+                    <li class="menuitem" onclick="reStyle(1)">Folha de estilo 2</li>
+                    <li class="menuitem" onclick="reStyle(2)">Folha de estilo 3</li>
+                    <li class="menuitem" onclick="reStyle(3)">Folha de estilo 4</li>
+                    <li class="menuitem" onclick="noStyles()">Sem folha de estilo</li>
             </ul>
 
         </div>
@@ -42,13 +35,13 @@
             <h1>Folhas de estilo diferentes da mesma página</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis doloremque nesciunt asperiores cupiditate error iure aut ullam, magni reprehenderit adipisci facere consectetur minima tempore dolor. Rem id corporis eveniet?</p>
             <p>
-                <a href="page001.html">Stylesheet 1</a> -
-                <a href="page002.html">Stylesheet 2</a> -
-                <a href="page003.html">Stylesheet 3</a> -
-                <a href="page004.html">Stylesheet 4</a> -
+                <a href="#" onclick="reStyle(0)">Stylesheet 1</a>,
+                <a href="#" onclick="reStyle(1)">Stylesheet 2</a>,
+                <a href="#" onclick="reStyle(2)">Stylesheet 3</a>,
+                <a href="#" onclick="reStyle(3)">Stylesheet 4</a>.
             </p>
             <h2>Sem estilos</h2>
-            <p>Esta página usa elementos DIV para agrupar seções da página HTML. Clique aqui para ver como fica a página sem folha de estilo: <br><a href="stock.html">Sem folha</a> de estilo.</p>
+            <p>Esta página usa elementos DIV para agrupar seções da página HTML. Clique aqui para ver como fica a página sem folha de estilo: <br><a href="#" onclick="noStyles()">Sem folha</a> de estilo.</p>
         </div>
 
         <div id="sidebar">
@@ -62,5 +55,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut odio non explicabo. Neque quia consequatur sint porro harum, quidem sequi, autem reprehenderit natus fuga quibusdam repellat odio blanditiis vero?</p>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

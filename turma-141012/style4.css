@@ -11,41 +11,33 @@ body {
 
 }
 
-.containerwrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-    
 
-}
-
-.containerwrapper a {
-    text-decoration: none;
-    color: #84c754;
-
-}
-
-
-#main a {
-    text-decoration: underline;
+.menuitem:hover{
     color: white;
+    cursor: pointer;
+}
 
+a{
+    color: white;
+}
+
+a:hover{
+    color: #84c754;
 }
 
 
 #sidebar {
-    float: right;
-    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 320px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 4px;
+    text-align: left;
     font-size: 80%;
     line-height: 20px;
 
 }
 
-#bottom {
+#bottom, #sidebar {
     text-align: center;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -55,3 +47,7 @@ body {
 
 }
 
+.wrapper {
+    position: relative;
+
+}
