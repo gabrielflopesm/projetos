@@ -3,6 +3,7 @@ function noStyles() {
     document.styleSheets[1].disabled = true;
     document.styleSheets[2].disabled = true;
     document.styleSheets[3].disabled = true;
+    document.styleSheets[4].disabled = true;
 
 }
 
